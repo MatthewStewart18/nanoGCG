@@ -16,3 +16,23 @@ For more detailed information, see the GitHub repository: https://github.com/Gra
 """
 
 from .gcg import GCGConfig, ProbeSamplingConfig, run
+from .tool_hijack import (
+    ToolSelectionHijackGCG,
+    ToolChainHijackGCG,
+    ToolHijackResult,
+    ToolChainHijackResult,
+    hijack_tool_selection,
+    hijack_tool_chain
+)
+
+__all__ = [
+    "GCGConfig",
+    "ProbeSamplingConfig", 
+    "run",
+    "ToolSelectionHijackGCG",
+    "ToolChainHijackGCG",
+    "ToolHijackResult",
+    "ToolChainHijackResult",
+    "hijack_tool_selection",
+    "hijack_tool_chain"
+]
